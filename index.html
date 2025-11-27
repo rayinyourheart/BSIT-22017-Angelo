@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Professional resume webpage" />
+
+    <title> BSIT-22017-Angelo </title>
+
+    <link rel="icon" type="image/png" href="assets/Learn with fen logo green fox no-text no-bg full.png">
+
+    <style>
+        /* ----------- Global ---------- */
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-style: Garamond;
+            background: #f3f5f7;
+            color: #222;
+        }
+
+        /* ----------- Resume Card ---------- */
+       .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+
+            /* Animation fixed */
+            opacity: 0;
+            transform: translateY(100px);
+            animation: slideIn 2s ease-out forwards;
+        }
+
+       @keyframes slideIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+         }
+        }
+
+
+
+        /* ----------- Photo ---------- */
+        #me {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        #me img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 5px 5px 12px rgba(0,0,0,0.2);
+            outline: thick solid black;
+        }
+
+        /* ----------- Headers ---------- */
+        h1 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            margin-top: 40px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 6px;
+            color: #333;
+        }
+
+        /* ----------- Sections ---------- */
+        .section p,
+        .section li {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        ul {
+            margin-top: 10px;
+        }
+
+        /* ----------- Contact ---------- */
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            .resume-container {
+                padding: 20px;
+            }
+            #me img {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Photo -->
+        <div id="me">
+            <img src="/assets/me.jpg" alt="My photo">
+        </div>
+
+        <!-- Name & Title -->
+        <h1>Your Name</h1>
+        <p style="text-align:center; font-size:14px; color:#555;">
+            <b>Birthday: November 13, 2006</b> <br>
+            <b>Birthplace:</b> Quezon City  <br>
+            <b>Age:</b> 19      <br>
+            <b>Sex:</b> Male         <br>
+        </p>
+
+        <!-- About section -->
+        <h2>Things about me </h2>
+        <div class="section">
+            <p>
+               I love going to different variety of cafes around the town and i'm down bad playing video games
+            </p>
+        </div>
+
+        <!-- Skills Section -->
+        <h2>Skills</h2>
+        <div class="section">
+            <ul>
+                <li>Logical Reasoning </li>
+                <li> Growth Mindset</li>
+                <li> Collaboration and teamwork</li>
+            </ul>
+        </div>
+
+        <!-- Hobbies Section -->
+        <h2>Hobbies</h2>
+        <div class="section">
+            <ul>
+                <li> Reading Books</li>
+                <li> Cafe Hopping </li>
+                <li> Playing a vareity of online games</li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact">
+            <p><strong>Contact Me</strong></p>
+            <p>Email: <a href="mailto:your-email@example.com">asthreyamin@gmail.com</a></p>
+        </div>
+
+    </div>
+
+</body>
+</html>
